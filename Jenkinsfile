@@ -4,7 +4,8 @@ pipeline {
     stage ('build stage') {
       steps {
           echo "hello! world"
-          sh "mvn:install"
+           echo "PATH = ${PATH}"
+           echo "M2_HOME = ${M2_HOME}"
 
          }
     }
