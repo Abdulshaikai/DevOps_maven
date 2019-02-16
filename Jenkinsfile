@@ -4,6 +4,7 @@ pipeline {
     stage ('build stage') {
       steps {
           echo "hello! world"
+          mvn --version
 
          }
     }
