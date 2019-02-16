@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('build stage') {
       steps {
-          sh 'mvn clean compile'
+          echo "hello! world"
 
          }
     }
