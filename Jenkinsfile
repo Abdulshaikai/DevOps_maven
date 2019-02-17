@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage ('build stage') {
       steps {
-           withMaven(jdk: 'JAVA_HOME', maven: 'M2_HOME') {
-               sh "mvn install"
-           }
+          echo "hello! world"
+          sh "mvn --version"
 
          }
     }
